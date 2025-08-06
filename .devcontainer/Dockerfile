@@ -49,5 +49,3 @@ WORKDIR /workspace
 
 USER $DEVCONTAINER_USER
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-ENV QDRANT_HOST=kbac-qdrant
