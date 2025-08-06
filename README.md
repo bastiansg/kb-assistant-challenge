@@ -39,6 +39,34 @@ Example queries:
 -   What does Cypher offer to the Agents, and in exchange for what?
 -   What is the purpose of the human fields, and who created them?
 
+#### Recommendations (Optional)
+
+To help you get started, here are some suggestions and prebuilt components available in this project. These are not required but may help you complete the challenge more efficiently and effectively:
+
+-   **Script Loader**
+
+    A custom loader is provided to parse and load The Matrix script. You can use this loader as-is or modify it as needed.
+
+    See: [notebooks/01-loaders/01-matrix-script-loader.ipynb](notebooks/01-loaders/01-matrix-script-loader.ipynb)
+
+-   **Retriever**
+
+    We recommend using a **Qdrant-based** retriever.
+
+    See: [notebooks/02-retriever/01-qdrant-retriever.ipynb](notebooks/02-retriever/01-qdrant-retriever.ipynb)
+
+-   **LLM Agent**
+
+    For implementing the AI agent, we recommend using **Pydantic-AI**.
+
+    See: [notebooks/03-llm-agents/01-llm-agents.ipynb](notebooks/03-llm-agents/01-llm-agents.ipynb)
+
+-   **Advanced Capability - MCP Server**
+
+    To handle advanced reasoning and agent orchestration, especially for the requirements in **Part 2** of this challenge, we recommend using an **MCP server**. The environment already includes **Pydantic-AI**, which has built-in support for the MCP protocol.
+
+    See: [https://ai.pydantic.dev/mcp/](https://ai.pydantic.dev/mcp/)
+
 ## Environment Setup
 
 _This setup is highly recommended but not obligatory. Work on the challenge using the environment of your preference._
@@ -76,3 +104,14 @@ A local Python package named **kbac** (short for KB Assistant Challenge) is incl
 ### Python Dependencies
 
 You can install additional Python libraries by adding them to the **requirements.txt**. You should rebuild the container afterward (F1 + Rebuild Container).
+
+### Environment Variables
+
+You can define environment variables (such as `OPENAI_API_KEY`) in a `.env` file placed at the root of the project. These variables will be automatically loaded into the environment inside the Dev Container.
+
+**Example `.env` file:**
+
+```env
+OPENAI_API_KEY=your-key-here
+MY_CUSTOM_VAR=some-value
+```
