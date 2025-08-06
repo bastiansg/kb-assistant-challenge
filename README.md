@@ -24,7 +24,7 @@ Example queries:
 -   Why is there no sunlight in the future?
 -   Who needs solar power to survive?
 -   Why do the Agents want to capture Morpheus?
--   Describe the Nebuchadnezzar
+-   Describe the Nebuchadnezzar.
 -   What is Nebuchadnezzar's crew made up of?
 
 ### Part 2 - Advanced Capabilities (Optional)
@@ -39,7 +39,7 @@ Example queries:
 -   What does Cypher offer to the Agents, and in exchange for what?
 -   What is the purpose of the human fields, and who created them?
 
-## Enviroment setup
+## Environment Setup
 
 _This setup is highly recommended but not obligatory. Work on the challenge using the environment of your preference._
 
@@ -53,7 +53,7 @@ _This setup is highly recommended but not obligatory. Work on the challenge usin
 
 -   Install Docker following the official [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/).
 
-### Dev container (Recommended)
+### Dev Container (Recommended)
 
 To ensure a consistent development environment, this project uses a preconfigured Dev Container.
 
@@ -61,7 +61,7 @@ To ensure a consistent development environment, this project uses a preconfigure
     ```bash
     code .
     ```
--   After installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, press F1 and type _Dev Containers_ and select: **Reopen in Container**
+-   After installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, press F1 to open the Command Palette, type _Dev Containers_, and select: **Reopen in Container**
 
 ### Jupyter
 
@@ -69,10 +69,10 @@ Jupyter is preconfigured inside the Dev Container.
 You can explore examples in the [notebooks/](notebooks/) directory.
 When opening a notebook, select the appropriate kernel in the top-right corner: **Python Environments -> Python 3.12 (Global Env)**
 
-### Custom python lib
+### Custom Python Library
 
-A local Python package named **kbac** (short for KB Assistant Challenge) is included in the environment. It contains utility functions to help you work with the project. You are encouraged to extend this library as needed. Example usage can be found in: [notebooks/01-loaders/01-matrix-script-loader.ipynb](notebooks/01-loaders/01-matrix-script-loader.ipynb).
+A local Python package named **kbac** (short for KB Assistant Challenge) is included in the environment. It contains utility functions to help you work with the project. You are encouraged to extend this library as needed. Example usage can be found in: [notebooks/01-loaders/01-matrix-script-loader.ipynb](notebooks/01-loaders/01-matrix-script-loader.ipynb). After you add to or modify this library, it is not necessary to rebuild the container. However, if you are using it in a Jupyter notebook, you should restart that notebook.
 
-### Python requirements
+### Python Dependencies
 
-Yo can install additional python libraries adding it to the **requirements.txt**
+You can install additional Python libraries by adding them to the **requirements.txt**. You should rebuild the container afterward (F1 + Rebuild Container).
