@@ -67,6 +67,18 @@ To help you get started, here are some suggestions and prebuilt components avail
 
     See: [https://ai.pydantic.dev/mcp/](https://ai.pydantic.dev/mcp/)
 
+#### System Evaluation
+
+As part of building a robust system, you should carefully consider:
+
+-   **How will you evaluate the system?**
+
+    What metrics or criteria will you use to assess the quality and accuracy of the responses?
+
+-   **How will you ensure the agent does not hallucinate or rely on prior knowledge of the movie?**
+
+    Your system should be designed to **only answer based on the retrieved context**, not the agent's pretrained knowledge.
+
 ## Environment Setup
 
 _This setup is highly recommended but not obligatory. Work on the challenge using the environment of your preference._
