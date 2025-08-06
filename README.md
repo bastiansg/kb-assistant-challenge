@@ -51,7 +51,7 @@ _This setup is highly recommended but not obligatory. Work on the challenge usin
     sudo apt install make
     ```
 
--   Install Docker following the official Docker [installation guide](https://docs.docker.com/engine/install/ubuntu/).
+-   Install Docker following the official [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/).
 
 ### Dev container (Recommended)
 
@@ -61,13 +61,13 @@ To ensure a consistent development environment, this project uses a preconfigure
     ```bash
     code .
     ```
--   After installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, press F1 to open the Command Palette, type Dev Containers, and select: **Reopen in Container**
+-   After installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, press F1 and type _Dev Containers_ and select: **Reopen in Container**
 
 ### Jupyter
 
 Jupyter is preconfigured inside the Dev Container.
 You can explore examples in the [notebooks/](notebooks/) directory.
-When opening a notebook, select the appropriate kernel in the top-right corner: Python Environments -> Python 3.12 (Global Env)
+When opening a notebook, select the appropriate kernel in the top-right corner: **Python Environments -> Python 3.12 (Global Env)**
 
 ### Custom python lib
 
